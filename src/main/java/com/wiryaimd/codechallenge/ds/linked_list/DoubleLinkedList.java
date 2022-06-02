@@ -5,7 +5,7 @@ import java.util.Iterator;
 public class DoubleLinkedList implements Iterable<Integer> {
 
     private int size = 0;
-    private Node head = null, tail = null;
+    public Node head = null, tail = null;
 
     private class Node{
 
@@ -66,9 +66,18 @@ public class DoubleLinkedList implements Iterable<Integer> {
         return head.val;
     }
 
-    public int peekLast(){
+    public int peekLast() {
         if (isEmpty()) throw new RuntimeException("a yo stupid boy");
         return tail.val;
+    }
+
+    public void reversePrint(Node head){
+        if(head == null){
+            return;
+        }
+
+        reversePrint(head.next);
+        System.out.println(head.val);
     }
 
     public int removeFirst(){

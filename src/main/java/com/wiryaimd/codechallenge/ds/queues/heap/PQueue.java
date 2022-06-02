@@ -2,6 +2,7 @@ package com.wiryaimd.codechallenge.ds.queues.heap;
 
 import java.util.*;
 
+// priority queue, menggunakan metode heap untuk sorting val dari terkecil/terbesar keatas
 // min heap yach
 // jadi heap nya berurut dari atas kecil ke terbesar
 public class PQueue {

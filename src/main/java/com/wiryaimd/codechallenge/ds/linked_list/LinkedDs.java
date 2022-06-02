@@ -25,6 +25,10 @@ public class LinkedDs {
         linkedList.addLast(342);
         linkedList.addLast(345);
 
+        System.out.println("reversee print=====");
+        linkedList.reversePrint(linkedList.head);
+        System.out.println("=====");
+
         Iterator<Integer> iterator = linkedList.iterator();
         while (iterator.hasNext()){
             int val = iterator.next();
