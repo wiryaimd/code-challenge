@@ -1,4 +1,4 @@
-package com.wiryaimd.codechallenge.hackerrank.ds.binarytree;
+package com.wiryaimd.codechallenge.ds.binarytree;
 
 public class MainBinaryTree {
 

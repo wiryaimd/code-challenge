@@ -1,11 +1,11 @@
-package com.wiryaimd.codechallenge.hackerrank.ds.binarytree;
+package com.wiryaimd.codechallenge.ds.binarytree;
 
-public class BST {
+public class BST { // binary search tree
 
-    static class Node{
-        int data;
-        Node left;
-        Node right;
+    public static class Node{
+        public int data;
+        public Node left;
+        public Node right;
 
         public Node(){}
 
