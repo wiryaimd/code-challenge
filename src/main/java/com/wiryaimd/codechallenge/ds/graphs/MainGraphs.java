@@ -55,9 +55,12 @@ public class MainGraphs {
         // jadi path itu kaya, urutan jalan atau edges dari node1 ke node tujuan,
         // for ex: PATH dari nodeA ke nodeE adalah -> nodeA-NodeB-nodeC-nodeD-nodeE
 
-        // adapun simple path -> yaitu tidak ada vertices ataupun edges yang diulang/repeated untuk dilewati
+        // walk: kata untuk setiap node yg terhubung melalui edges
+        // adapun simple path -> 'walk' dimana tidak ada vertices ataupun edges yang diulang/repeated untuk dilewati
 
-        // trail: yaitu tidak ada edges yang diulang untuk dilewati
+        // trail: 'walk' dimana tidak ada edges yang diulang untuk dilewati
+        // closed walk: dimana start and end nya berada pada vertex yg sama
+        // acyclic graph: graph with no cycle (ex: binary tree yach)
 
 
 
