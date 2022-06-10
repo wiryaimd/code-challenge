@@ -12,34 +12,80 @@ public class MergeTwoLinkedList {
       }
 
       // uncompleted
-    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+//    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+//
+//        ListNode listNode = new ListNode();
+//        ListNode tmp = listNode;
+//
+//        while (true){
+//            if (list2 == null){
+//                tmp.next = list1;
+//                break;
+//            }
+//
+//            if (list1 == null){
+//                tmp.next = list2;
+//                break;
+//            }
+//
+//            if (list1.val < list2.val){
+//                tmp.next = list1;
+//                list1 = list1.next;
+//            }else{
+//                tmp.next = list2;
+//                list2 = list2.next;
+//            }
+//
+//            tmp = tmp.next;
+//        }
+//
+//        return listNode.next;
+//    }
 
-        ListNode listNode = new ListNode();
-        ListNode tmp = listNode;
 
-        while (true){
-            if (list2 == null){
-                tmp.next = list1;
-                break;
-            }
 
-            if (list1 == null){
-                tmp.next = list2;
-                break;
-            }
-
-            if (list1.val < list2.val){
-                tmp.next = list1;
-                list1 = list1.next;
-            }else{
-                tmp.next = list2;
-                list2 = list2.next;
-            }
-
-            tmp = tmp.next;
+    // completed accepted .... hahay O n yachh
+    public static ListNode mergeTwoLists(ListNode list1, ListNode list2){
+        ListNode node = null;
+        if(list1 == null && list2 == null){
+            return null;
         }
 
-        return listNode.next;
+        if(list1 == null){
+            return list2;
+        }
+
+        if(list2 == null){
+            return list1;
+        }
+
+        if(list1.val < list2.val){
+            node = list1;
+            list1 = list1.next;
+        }else{
+            node = list2;
+            list2 = list2.next;
+        }
+
+        ListNode head = node;
+
+        while(list1 != null && list2 != null){
+            if(list1.val < list2.val){
+                node.next = list1;
+                list1 = list1.next;
+            }else{
+                node.next = list2;
+                list2 = list2.next;
+            }
+            node = node.next;
+        }
+
+        if(list1 == null){
+            node.next = list2;
+        }else{
+            node.next = list1;
+        }
+        return head;
     }
 
     public static void main(String[] args) {
