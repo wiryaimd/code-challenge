@@ -27,9 +27,6 @@ public class PlusOne {
         for(int a : plusOne(arr)){
             System.out.print(a);
         }
-
-        System.out.println();
-        System.out.println(Math.pow(3, 3));
     }
 
 }

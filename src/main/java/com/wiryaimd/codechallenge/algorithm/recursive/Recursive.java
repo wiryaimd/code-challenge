@@ -1,4 +1,4 @@
-package com.wiryaimd.codechallenge.ds;
+package com.wiryaimd.codechallenge.algorithm.recursive;
 
 public class Recursive {
 
@@ -18,6 +18,18 @@ public class Recursive {
 
     public static void main(String[] args) {
         System.out.println(hayuRekur(6));
+
+        // recursive algorithm adalah..
+        // memanggil method itu sendiri secara berulang, untuk menyelesaikan problem
+        // intinya ya rekursif tod
+
+        // ex probelm yg menggunakan recursive:
+        // - fibonaci
+        // - BFS
+        // - DFS
+        // - Tower Of Hannoi
+        // - Factorial Number
+
     }
 
 }

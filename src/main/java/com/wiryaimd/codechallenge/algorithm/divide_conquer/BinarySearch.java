@@ -1,4 +1,4 @@
-package com.wiryaimd.codechallenge.algorithm;
+package com.wiryaimd.codechallenge.algorithm.divide_conquer;
 
 import com.wiryaimd.codechallenge.ds.array.Sort;
 
