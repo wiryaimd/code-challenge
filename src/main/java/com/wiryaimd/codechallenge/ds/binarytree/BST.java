@@ -16,7 +16,7 @@ public class BST { // binary search tree
         }
     }
 
-    Node root;
+    public Node root;
 
     public void insert(int val){
         root = insert(root, val);

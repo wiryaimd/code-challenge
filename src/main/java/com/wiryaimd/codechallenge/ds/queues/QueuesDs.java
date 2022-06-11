@@ -1,6 +1,8 @@
 package com.wiryaimd.codechallenge.ds.queues;
 
 import java.util.AbstractQueue;
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.PriorityQueue;
 
 public class QueuesDs {
@@ -25,7 +27,6 @@ public class QueuesDs {
         queue.offer("assdaads2");
         queue.offer("assdaads3");
         queue.poll();
-
 
 
     }

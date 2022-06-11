@@ -23,6 +23,10 @@ public class Recursive {
         // memanggil method itu sendiri secara berulang, untuk menyelesaikan problem
         // intinya ya rekursif tod
 
+        // cara berpikir proses recursion:
+        // dengan menganggap output nya itu kaya stack
+        // jadi LAST IN FIRST OUT
+
         // ex probelm yg menggunakan recursive:
         // - fibonaci
         // - BFS

@@ -1,4 +1,4 @@
-package com.wiryaimd.codechallenge.leetcode;
+package com.wiryaimd.codechallenge.leetcode.tree;
 
 import java.util.ArrayList;
 import java.util.List;
