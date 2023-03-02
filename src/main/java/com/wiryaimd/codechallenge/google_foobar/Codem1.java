@@ -10,6 +10,23 @@ public class Codem1 {
         String[] test = {"1.11", "2.0.0", "1.2", "2", "0.1", "1.2.1", "1.1.1", "2.0"};
         String[] test2 = {"1.1.2", "1.0", "1.3.3", "1.0.12", "1.0.2"};
 
+        int[] a = {1 ,4 ,1 ,23,4, 5,7, 35};
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a.length; j++) {
+                // 4 < 3
+                // 3 < 4
+                if (a[i] < a[j]){
+                    int tmp = a[i];
+                    a[i] = a[j];
+                    a[j] = tmp;
+                }
+            }
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
+
 
 //        System.out.println("2".compareTo("12"));
 //
@@ -33,10 +50,10 @@ public class Codem1 {
 //        System.out.println(less2(new String[]{"3", "0", "1"}, new String[]{"3", "0"}));
 
 
-        String[] res = solve(test);
-        for (int i = 0; i < res.length; i++) {
-            System.out.println(res[i]);
-        }
+//        String[] res = solve(test);
+//        for (int i = 0; i < res.length; i++) {
+//            System.out.println(res[i]);
+//        }
 
 
 //        String[] as = "asd".split("\\.");
